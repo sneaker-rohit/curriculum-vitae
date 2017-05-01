@@ -1,0 +1,187 @@
+%%%%%%%%%%%%%%%%%
+% This is an example CV created using altacv.cls (v1.1.2, 1 February 2017) written by
+% LianTze Lim (liantze@gmail.com), based on the 
+% Cv created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+% 
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you want to use \orcid or the
+%% academicons icons, add "academicons"
+%% to the \documentclass options. 
+%% Then compile with XeLaTeX or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+\documentclass[10pt,a4paper]{altacv}
+
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages. 
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols.
+%% When using the "academicons" option,
+%% Compile with LuaLaTeX for best results. If you
+%% want to use XeLaTeX, you may need to install
+%% Academicons.ttf in your operating system's font %% folder.
+
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1cm,bottom=1cm}
+
+% Change the font if you want to.
+
+% If using pdflatex:
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{lato}
+
+% If using xelatex or lualatex:
+% \setmainfont{Lato}
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{3E0097}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{Rohit P. Tahiliani}
+\tagline{Postgraduate Student at Trinity College Dublin}
+% Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
+%\photo{2.5cm}{rohitt}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \email{tahiliar@tcd.ie}
+  \phone{+353-899882684}
+  %\mailaddress{Address, Street, 00000 County}
+  \location{Dublin, IE}
+  %\homepage{marissamayr.tumblr.com/}
+  %\twitter{@marissamayer}
+  \linkedin{linkedin.com/in/rohittahiliani}
+   \github{github.com/sneaker-rohit} % I'm just making this up though.
+%   \orcid{orcid.org/0000-0000-0000-0000} % Obviously making this up too. If you want to use this field (and also other academicons symbols), add "academicons" option to \documentclass{altacv}
+}
+
+%% Make the header extend all the way to the right, if you want. Extend the right margin by 8cm (=6.8cm marginparwidth + 1.2cm marginparsep)
+\begin{adjustwidth}{}{-8cm}
+\makecvheader
+\end{adjustwidth}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+\cvsection[page1sidebar]{Experience}
+
+\cvevent{Software Engineer}{{\faBriefcase} SONY}{Aug 2014 -- Aug 2016}{Bengaluru, IN}
+\begin{itemize}
+
+\item Performing security scans, code enhancements \& bug fixes.
+\item Production support \& troubleshooting tasks.
+\item Working with Agile Scrum Methodologies.
+\item Delivered sessions to internal teams on the state of the art technologies.
+\end{itemize}
+
+\divider
+
+\cvsection[page1sidebar]{Projects}
+
+\cvevent{}{{\faCode} Implementation \& Evaluation of Linux Queue Disciplines in ns-3}{Dec 2016 -- Ongoing}{Dublin, IN}
+\begin{itemize}
+\item Implementing a ns-3 model for a recently proposed AQM, PI2: A Linearized AQM for Classic and Scalable TCP.
+\item AQM Mechanisms a.k.a. Queue Disciplines are designed to address the problem of Bufferbloat.
+\end{itemize}
+
+\cvevent{}{{\faCode} Improved Congestion Feedback in Data Center TCP}{Aug 2013 -- May 2014}{Mangalore, IN}
+\begin{itemize}
+
+\item DCTCP algorithm was modified to use mark from front strategy with an aim to reduce the Flow Completion Time of mice traffic.
+\item Simulations results obtained using ns-2 confirmed the effectiveness of proposed algorithm.
+\end{itemize}
+
+\cvevent{}{{\faCode} System Hardening of Linux Box }{Oct 2013 -- Nov 2013}{Mangalore, IN}
+\begin{itemize}
+
+\item Implement multiple layer of defense mechanisms to lock down potential threats.
+\item Worked on Iptables, TCP Wrappers, Port Knocking techniques and performing vulnerability scans.
+\end{itemize}
+
+\cvevent{}{{\faCode} Configuring Software Firewalls in Linux }{Feb 2013 -- Mar 2013}{Mangalore, IN}
+\begin{itemize}
+\item Implemented different rules and policies in iptables \& uncomplicated firewall (ufw).
+\item Developed configurations to prevent attacks and block specific ports,
+protocols, IP addresses.
+\end{itemize}
+
+\divider
+
+\cvsection{Technical Skillset}
+
+\cvtag{Python} 
+\cvtag{Shell}
+\cvtag{C++}
+\cvtag{MySQL}
+
+\divider\smallskip
+
+\cvtag{Linux/Debian}
+\cvtag{Kali Linux}
+\cvtag{Windows}
+\cvtag{Mac}
+
+\divider\smallskip
+
+\cvtag{Wireshark}
+\cvtag{Nmap}
+\cvtag{LaTex}
+\cvtag{Git}
+\cvtag{JIRA}
+\cvtag{Chef}
+\cvtag{ns-3}
+\cvtag{Amazon Web Services}
+\cvtag{DevOps}
+\cvtag{Agile}
+\cvtag{Performance Tuning}
+\cvtag{Ethical Hacking}
+\cvtag{Penetration Testing}
+\cvtag{Network Architecture}
+
+
+
+\clearpage
+
+\cvsection[page2sidebar]{Publications}
+
+\nocite{*}
+
+\printbibliography[heading=pubtype,title={\printinfo{\faBook}{Books}},type=book]
+
+Contributed a chapter \emph{"TCP Congestion Control in Data Center Networks".}
+\divider
+
+\printbibliography[heading=pubtype,title={\printinfo{\faGroup}{Conference Proceedings}},type=inproceedings]
+
+%% If the NEXT page doesn't start with a \cvsection but you'd
+%% still like to add a sidebar, then use this command on THIS
+%% page to add it. The optional argument lets you pull up the 
+%% sidebar a bit so that it looks aligned with the top of the
+%% main column.
+% \addnextpagesidebar[-1ex]{page3sidebar}
+
+
+\end{document}
